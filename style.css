@@ -1,0 +1,42 @@
+body{
+  background-color: #b8cef2;
+}
+#text{
+  width: 1655px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin-top: 15px;
+  margin-right: 0px;
+  background-color: white;
+  border: 1px solid #DEDCD9;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#wetter_text{
+  #margin-left: 120px;
+  margin-top: 10px;
+  border: none;
+  width: 450px;
+  height: 80px;
+  background-color: grey;
+  border-radius: 5px;
+  border-color:black;
+  border-width: thin;
+}
+
+#titel{
+  text-align: center;
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#daten{
+  height: 100px;
+  #margin-left: 800px;
+  #width: 100px;
+  background-color: grey;
+  border-radius: 5px;
+}
