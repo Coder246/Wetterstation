@@ -89,10 +89,6 @@ echo "bei einer konstaten Temperatur von ";
 
 b:
 
-echo " ------------------------";
- echo $Temperaturverlauf;
- echo " ------------------------ ";
- echo $Wetter
 
 
 ?>
