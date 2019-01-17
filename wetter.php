@@ -26,7 +26,7 @@ $Wetter = $L1 - $L2;
 //Starker Anstieg
  if ($Wetter > 1) {
 
-		echo "Kurzfristige, starke Wetteränderung wahrscheinlich ";
+		echo "Kurzfristige, starke Wetterbeserung wahrscheinlich ";
     goto a;
  }
 
