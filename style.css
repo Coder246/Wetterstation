@@ -36,6 +36,19 @@ body{
 #daten{
   height: 100px;
   #margin-left: 800px;
+#  width: 100px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+#Luftdruckanzeige{
+  margin-top: 5px;
+}
+
+#WB{
+  margin-top: 10px;
+  height: 100px;
+  #margin-left: 800px;
   #width: 100px;
   background-color: grey;
   border-radius: 5px;

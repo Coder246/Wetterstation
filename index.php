@@ -9,6 +9,16 @@ foreach ($pdo->query($sql) as $row) {
    $T1 = $row['wert'];
 }
 
+$sql = "SELECT * FROM temperatur_tb WHERE ID=(SELECT Max(ID)-6 FROM temperatur_tb);";
+foreach ($pdo->query($sql) as $row) {
+   //echo $row['id']." Temperatur:".$row['wert']." Luftdruck:".$row['luftdruck']." Luftfeuchtigkeit:".$row['luftfeuchtigkeit']."<br />";
+   $Lvs = $row['luftdruck']; #Lvs = Luftdruck vor Stunde
+   $F1 = $row['luftfeuchtigkeit'];
+   $T1 = $row['wert'];
+}
+
+$hpaproStunde=$L1-$Lvs;
+
 ?>
 
 <html>
@@ -25,12 +35,35 @@ foreach ($pdo->query($sql) as $row) {
       echo $T1;
       echo " C°"
     ?>
-    <br><?php
+    <div id="Luftdruckanzeige"><br><?php
       echo "Luftdruck:  ";
       echo $L1;
       echo "hpa";
-    ?></br>
+      echo $hpaproStunde
+    ?></br></div>
 
+  </div>
+  <div id="WB">
+    <?php
+      if($L1>1030){
+        echo "sehr sonnig   (Viel Sonne kaum bewölgt)";
+      }
+      if($L1<1030 && $L1>1020){
+        echo "Sonne    (Sonne)";
+      }
+      if($L1<1020 && $L1>=1000){
+        echo "Normal  (Wolken mit Sonne)";
+      }
+      if($L1<1000 && $L1>990){
+        echo "Regen   (Bewölkt und Regen)";
+      }
+      if($L1<990 && $L1>970){
+        echo "Stürmisch (Wolken, Regen und Sturm)";
+      }
+	  if($L1<970 && $L1>100){
+        echo "Stürmisch    (Wolken mit Regen und heftigem Sturm, Gewitter wahrscheinlich)";
+      } 
+    ?>
   </div>
         <iframe id="wetter_text" name="wetter"  src="wetter.php"></iframe>
 </div>
