@@ -53,3 +53,16 @@ body{
   background-color: grey;
   border-radius: 5px;
 }
+
+
+#tendenz {
+  #margin-left: 120px;
+  margin-top: 10px;
+  border: none;
+  width: 450px;
+  height: 80px;
+  background-color: grey;
+  border-radius: 5px;
+  border-color:black;
+  border-width: thin;
+}

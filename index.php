@@ -64,7 +64,7 @@ $hpaproStunde=$L1-$Lvs;
         echo "Stürmisch    (Wolken mit Regen und heftigem Sturm, Gewitter wahrscheinlich)";
       } 
     ?>
-  </div>
+  </div id="tendenz">
         <iframe id="wetter_text" name="wetter"  src="wetter.php"></iframe>
 </div>
 </html>
