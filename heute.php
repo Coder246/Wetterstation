@@ -14,7 +14,7 @@ foreach ($pdo->query($sql) as $row) {
    //echo $row['id']." Temperatur:".$row['wert']." Luftdruck:".$row['luftdruck']." Luftfeuchtigkeit:".$row['luftfeuchtigkeit']."<br />";
    $Lvs = $row['luftdruck']; #Lvs = Luftdruck vor Stunde
    $F1 = $row['luftfeuchtigkeit'];
-   $T1 = $row['wert'];
+   $T2 = $row['wert'];
 }
 
 $hpaproStunde=$L1-$Lvs;
@@ -52,6 +52,35 @@ $hpaproStunde=$L1-$Lvs;
 
         echo "Sehr Stürmisch eventuell auch starker Regen";
       }
+
+
+
+      $Temperaturverlauf = $T1 - $T2;
+
+      if ($Temperaturverlauf > 1){
+        echo "es wird wärmer, es sind aktuell ";
+        echo $T1;
+        echo " °C!";
+        goto b;
+      }
+
+
+
+     //Temperatur sinkt
+
+      if ($Temperaturverlauf < -1){
+        echo "es wird kälter, es sind aktuell ";
+        echo $T1;
+        echo " °C!";
+      }else{
+
+     echo "bei einer konstanten Temperatur von ";
+        echo $T1;
+        echo " °C!";
+      }
+
+     b:
+
     ?>
 
 
