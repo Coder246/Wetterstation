@@ -22,19 +22,41 @@ $hpaproStunde=$L1-$Lvs;
 ?>
 
 <html>
+<head>
 
-<head >
-
-<title>Wetter</title>
-<h1 id="titel">Wetter.pi</h1>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="index">
-    <iframe id="gestern" class="framewetter" src="gestern.php"></iframe>
-    <iframe id="heute" class="framewetter" src="heute.php"></iframe>
-    <iframe id="instunde" class="framewetter" src="wetter.php"></iframe>
+<body>
 
-</body>
+<h1 id="maintext">Aktuell</h1>
+  <div id="WB">
+    <a>
+    <?php
+      if($L1>1030){
+        echo "Sehr viel Sonne fast unbewölkter Himmel";
+      }
+      if($L1<1030 && $L1>1020){
+
+        echo "Sonne mit wenigen Wolken";
+      }
+      if($L1<1020 && $L1>=1000){
+
+        echo "Bewölkt, vereinzelt mit Sonne";
+      }
+      if($L1<1000 && $L1>990){
+   echo "<html><body>Mein Text ist hier zu finden<br><a href=\"http://www.example.org\">der Link</a></body></html>;
+        echo "Bewölkt eventuell auch Regen und Wind ";
+      }
+      if($L1<990 && $L1>970){
+
+        echo "Sehr Stürmisch eventuell auch starker Regen";
+      }
+    ?>
+
+
+</a>
+  </div>
+</body >
 
 </html>

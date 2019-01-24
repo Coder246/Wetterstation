@@ -1,4 +1,5 @@
 
+
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=haus', 'phpmyadmin', 'Raspiserve');
 //Wert vor 1h
@@ -18,6 +19,16 @@ foreach ($pdo->query($sql) as $row) {
    $T2 = $row['wert'];
 }
 
+?>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1 id="maintext">In ein paar Stunden</h1>
+<a>
+<?php
 //Wetter
 $Wetter = $L1 - $L2;
 
@@ -26,7 +37,7 @@ $Wetter = $L1 - $L2;
 //Starker Anstieg
  if ($Wetter > 1) {
 
-		echo "Kurzfristige, starke Wetterbeserung wahrscheinlich ";
+		echo "Kurzfristige, starke Wetteränderung wahrscheinlich ";
     goto a;
  }
 
@@ -91,8 +102,8 @@ b:
 
 
 
+
 ?>
-
-<html>
-
+</a>
+</body>
 </html>
