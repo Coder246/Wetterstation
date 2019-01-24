@@ -58,7 +58,7 @@ $hpaproStunde=$L1-$Lvs;
       $Temperaturverlauf = $T1 - $T2;
 
       if ($Temperaturverlauf > 1){
-        echo "es wird wärmer, es sind aktuell ";
+        echo ", die Temperatur ist gerade am steigen, es sind aktuell ";
         echo $T1;
         echo " °C!";
         goto b;
@@ -69,7 +69,7 @@ $hpaproStunde=$L1-$Lvs;
      //Temperatur sinkt
 
       if ($Temperaturverlauf < -1){
-        echo "es wird kälter, es sind aktuell ";
+        echo ", die Temperatur fällt, es sind aktuell ";
         echo $T1;
         echo " °C!";
       }else{
