@@ -45,7 +45,7 @@ $hpaproStunde=$L1-$Lvs;
         echo "Bewölkt, vereinzelt mit Sonne";
       }
       if($L1<1000 && $L1>990){
-   echo "<html><body>Mein Text ist hier zu finden<br><a href=\"http://www.example.org\">der Link</a></body></html>;
+
         echo "Bewölkt eventuell auch Regen und Wind ";
       }
       if($L1<990 && $L1>970){
