@@ -45,8 +45,8 @@ $hpaproStunde=$L1-$Lvs;
         echo "Bewölkt, vereinzelt mit Sonne";
       }
       if($L1<1000 && $L1>990){
-
-        echo "Bewölkt eventuell auch Regen und Wind ";
+      echo '<img src="sonne.png" alt="Beispiel" width="400" height="200">';
+       echo "Bewölkt eventuell auch Regen und Wind ";
       }
       if($L1<990 && $L1>970){
 
