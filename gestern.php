@@ -33,7 +33,7 @@ foreach ($pdo->query($sql) as $row) {
    $T3 = $row['wert'];
 }
 $DR=($L1+$L2+$L3)/3;
-
+$DT=($T1+$T2+$T3)/3;
 
 
 
@@ -44,20 +44,46 @@ $DR=($L1+$L2+$L3)/3;
 
 //Starker Anstieg
 if($DR>1030){
-  echo "Gestern war es sehr sonnig mit wenigen Wolken.";
+  echo '<img src="sonne.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+  echo "Gestern war es sehr sonnig mit wenigen Wolken, ";
+
 }
 if($DR<1030 && $DR>1020){
-  echo "Gestern war es ziemlich sonnig mit ein paar Wolken.";
+  echo '<img src="normal.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+  echo "Gestern war es ziemlich sonnig mit ein paar Wolken, ";
+
 }
 if($DR<1020 && $DR>=1000){
-  echo "Gestern war es ziemlich bewölkt mit vereinzelten Sonnenlöchern";
+  echo '<img src="wolken.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+  echo "Gestern war es ziemlich bewölkt mit vereinzelten Sonnenlöchern, ";
 }
 if($DR<1000 && $DR>990){
-  echo "Gestern war es Bewölkt mit leichtem Regen";
-}
+  echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+  echo "Gestern war es Bewölkt mit leichtem ";
+  if($T2>0){
+    echo "Regen, ";
+
+  }else {
+    echo "Schneefall, ";
+  }
+ }
+
 if($DR<990 && $DR>970){
-  echo "Gestern war es regnerisch und stürmisch";
-}
+  echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+  echo "Gestern war es  ";
+  if($T2>0){
+    echo "regnerisch und stürmisch, ";
+
+  }else {
+    echo "schneeig und stürmisch, ";
+  }
+ }
+
+//Temperatur
+
+echo "bei einer Durchschnittstemperatur von ";
+echo round($DT);
+echo " C°";
 ?>
 
 </a>

@@ -36,42 +36,94 @@ $Wetter = $L1 - $L2;
 
 //Starker Anstieg
  if ($Wetter > 1) {
-
-		echo "Kurzfristige, starke Wetteränderung wahrscheinlich ";
+   echo '<img src="sonne.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+		echo "Kurzfristige, starke Wetterbesserung wahrscheinlich";
     goto a;
  }
 
   //Schwacher Anstieg
 
    if ($Wetter > 0.25) {
-
-		echo "Besserung des Wetters in Aussicht ";
+     echo '<img src="normal.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+		echo "Besserung des Wetters in Aussicht";
     goto a;
  }
 
 //Starker Abfall
  if ($Wetter < -1) {
-
-	echo "Hohe Wahrscheinlichkeit eines Unwetters ";
+   echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+	echo "Hohe Wahrscheinlichkeit eines Unwetters";
   goto a;
 }
 
  //Schwacher Abfall
 
   if ($Wetter < -0.25) {
-
-	echo "Verschlechterung des Wetters in Aussicht ";
+    echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+	echo "Verschlechterung des Wetters in Aussicht";
 }else{
 
-   echo "Das Wetter ist beständig ";
+  //Bild abfrage
+
+
+
+     if($L1>1030){
+       echo '<img src="sonne.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+
+     }
+     if($L1<1030 && $L1>1020){
+       echo '<img src="normal.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+
+     }
+     if($L1<1020 && $L1>=1000){
+       echo '<img src="wolken.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+
+     }
+     if($L1<1000 && $L1>990){
+       echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+
+     }
+     if($L1<990 && $L1>970){
+       echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+
+     }
+
+
+
+
+     //Text ausgabe
+
+   echo "Das Wetter ist beständig";
+
+
  }
 
 
- //end luftdruck Abfrage
-
 a:
 
+//Temperatur tendenz
 
+
+$Temperaturverlauf = $T1 - $T2;
+
+if ($Temperaturverlauf > 1){
+  echo ", gleichzeitig ist die Temperatur am steigen.";
+  goto b;
+}
+
+
+
+//Temperatur sinkt
+
+if ($Temperaturverlauf < -1){
+  echo ", dabei fällt die Temperatur.";
+
+}else{
+
+echo ", bei gleichbleibender Temperatur.";
+}
+
+b:
 
 
 
