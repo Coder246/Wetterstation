@@ -70,35 +70,9 @@ $Wetter = $L1 - $L2;
  //end luftdruck Abfrage
 
 a:
-//
-
-//Temperatur steigt
-
- $Temperaturverlauf = $T1 - $T2;
-
- if ($Temperaturverlauf > 1){
-   echo "es wird wärmer, es sind aktuell ";
-   echo $T1;
-   echo " °C!";
-   goto b;
- }
 
 
 
-//Temperatur sinkt
-
- if ($Temperaturverlauf < -1){
-   echo "es wird kälter, es sind aktuell ";
-   echo $T1;
-   echo " °C!";
- }else{
-
-echo "bei einer konstaten Temperatur von ";
-   echo $T1;
-   echo " °C!";
- }
-
-b:
 
 
 
