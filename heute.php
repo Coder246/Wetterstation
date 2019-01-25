@@ -34,22 +34,23 @@ $hpaproStunde=$L1-$Lvs;
     <a>
     <?php
       if($L1>1030){
+        echo '<img src="sonne.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Sehr viel Sonne fast unbewölkter Himmel";
       }
       if($L1<1030 && $L1>1020){
-
+        echo '<img src="normal.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Sonne mit wenigen Wolken";
       }
       if($L1<1020 && $L1>=1000){
-
+        echo '<img src="wolken.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Bewölkt, vereinzelt mit Sonne";
       }
       if($L1<1000 && $L1>990){
-      echo '<img src="sonne.png" alt="Beispiel" width="400" height="200">';
+        echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
        echo "Bewölkt eventuell auch Regen und Wind ";
       }
       if($L1<990 && $L1>970){
-
+        echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Sehr Stürmisch eventuell auch starker Regen";
       }
 
