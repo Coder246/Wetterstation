@@ -74,7 +74,7 @@ $hpaproStunde=$L1-$Lvs;
         echo " °C!";
       }else{
 
-     echo "bei einer konstanten Temperatur von ";
+     echo " bei einer konstanten Temperatur von ";
         echo $T1;
         echo " °C!";
       }
