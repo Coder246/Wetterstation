@@ -48,7 +48,7 @@ $hpaproStunde=$L1-$Lvs;
       if($L1<1000 && $L1>990){
         echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
        echo "Bewölkt eventuell auch ";
-       if($T2>0){
+       if($T1>0){
          echo "Regen und Wind";
 
        }else {
@@ -58,7 +58,7 @@ $hpaproStunde=$L1-$Lvs;
       if($L1<990 && $L1>970){
         echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Sehr stürmisch eventuell auch ";
-        if($T2>0){
+        if($T1>0){
           echo "starker Regen";
 
         }else {
@@ -73,7 +73,7 @@ $hpaproStunde=$L1-$Lvs;
 
 
         echo ", es sind aktuell ";
-        echo $T2;
+        echo $T1;
         echo " °C!";
 
 
