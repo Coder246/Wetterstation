@@ -93,7 +93,7 @@ $Wetter = $L1 - $L2;
 
      //Text ausgabe
 
-   echo "Das Wetter ist beständig";
+   echo "Das Wetter bleibt beständig";
 
 
  }
