@@ -1,25 +1,4 @@
-<?php
-$pdo = new PDO('mysql:host=localhost;dbname=haus', 'phpmyadmin', 'Raspiserve');
-//Wert vor 1h
-$sql = "SELECT * FROM temperatur_tb WHERE ID=(SELECT Max(ID) FROM temperatur_tb);";
-foreach ($pdo->query($sql) as $row) {
-   //echo $row['id']." Temperatur:".$row['wert']." Luftdruck:".$row['luftdruck']." Luftfeuchtigkeit:".$row['luftfeuchtigkeit']."<br />";
-   $L1 = $row['luftdruck'];
-   $F1 = $row['luftfeuchtigkeit'];
-   $T1 = $row['wert'];
-}
 
-$sql = "SELECT * FROM temperatur_tb WHERE ID=(SELECT Max(ID)-6 FROM temperatur_tb);";
-foreach ($pdo->query($sql) as $row) {
-   //echo $row['id']." Temperatur:".$row['wert']." Luftdruck:".$row['luftdruck']." Luftfeuchtigkeit:".$row['luftfeuchtigkeit']."<br />";
-   $Lvs = $row['luftdruck']; #Lvs = Luftdruck vor Stunde
-   $F1 = $row['luftfeuchtigkeit'];
-   $T1 = $row['wert'];
-}
-
-$hpaproStunde=$L1-$Lvs;
-
-?>
 
 <html>
 
