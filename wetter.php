@@ -36,7 +36,7 @@ $Wetter = $L1 - $L2;
 
 //Starker Anstieg
  if ($Wetter > 1) {
-   echo '<img src="sonne.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+   echo '<img src="wetterbesser.gif" alt="Beispiel" width="400" height="200" id="wetterimg">';
 		echo "Kurzfristige, starke Wetterbesserung wahrscheinlich";
     goto a;
  }
@@ -44,14 +44,14 @@ $Wetter = $L1 - $L2;
   //Schwacher Anstieg
 
    if ($Wetter > 0.25) {
-     echo '<img src="normal.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+     echo '<img src="wetterbesser.gif" alt="Beispiel" width="400" height="200" id="wetterimg">';
 		echo "Besserung des Wetters in Aussicht";
     goto a;
  }
 
 //Starker Abfall
  if ($Wetter < -1) {
-   echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+   echo '<img src="wetterschlechter.gif" alt="Beispiel" width="400" height="200" id="wetterimg">';
 	echo "Hohe Wahrscheinlichkeit eines Unwetters";
   goto a;
 }
@@ -59,7 +59,7 @@ $Wetter = $L1 - $L2;
  //Schwacher Abfall
 
   if ($Wetter < -0.25) {
-    echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
+    echo '<img src="wetterschlechter.gif" alt="Beispiel" width="400" height="200" id="wetterimg">';
 	echo "Verschlechterung des Wetters in Aussicht";
 }else{
 
