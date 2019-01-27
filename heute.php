@@ -55,7 +55,7 @@ $hpaproStunde=$L1-$Lvs;
          echo "Schnee und Wind";
        }
       }
-      if($L1<990 && $L1>970){
+      if($L1<990){
         echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
         echo "Sehr stürmisch eventuell auch ";
         if($T1>0){
