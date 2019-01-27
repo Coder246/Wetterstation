@@ -68,7 +68,7 @@ if($DR<1000 && $DR>990){
   }
  }
 
-if($DR<990 && $DR>970){
+if($DR<990){
   echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
   echo "Gestern war es  ";
   if($T2>0){
