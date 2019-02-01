@@ -83,7 +83,7 @@ $Wetter = $L1 - $L2;
        echo '<img src="regen.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
 
      }
-     if($L1<990 && $L1>970){
+     if($L1<990){
        echo '<img src="sturmisch.png" alt="Beispiel" width="400" height="200" id="wetterimg">';
 
      }
