@@ -83,7 +83,7 @@ if($DR<990){
 
 echo "bei einer Durchschnittstemperatur von ";
 echo round($DT);
-echo " C°";
+echo " °C";
 ?>
 
 </a>
