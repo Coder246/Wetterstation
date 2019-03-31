@@ -87,5 +87,8 @@ echo " °C";
 ?>
 
 </a>
+</br>
+
+<a href="zusammenfassung.php" target="blank" id="linkingestern">-Zusammenfassung-</a>
 
 </html>

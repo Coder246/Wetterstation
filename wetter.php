@@ -131,5 +131,6 @@ b:
 
 ?>
 </a>
+  <a href="radarkarte.php" target="blank" id="linkinwetter">-Voraussicht-</a>
 </body>
 </html>

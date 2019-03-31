@@ -66,12 +66,43 @@ background-color: #ceccca;
 a {
   text-align: center;
   font-size: 30px;
+  text-decoration: none;
+
 
 }
 
 #wetterimg {
   margin-right: 50px;
   margin-left: 20px;
+
+
+}
+
+
+#linkingestern {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 110px;
+  color:rgb(101, 101, 101);
+
+
+}
+
+#linkinheute {
+  position: absolute;
+  margin-top: 135px;
+  margin-left: 180px;
+  color:rgb(101, 101, 101);
+
+
+}
+
+
+#linkinwetter {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: -190px;
+  color:rgb(101, 101, 101);
 
 
 }
