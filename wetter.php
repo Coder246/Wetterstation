@@ -126,11 +126,11 @@ echo ", bei gleichbleibender Temperatur.";
 b:
 
 
-
-
-
 ?>
 </a>
-  <a href="radarkarte.php" target="_parent" id="linkinwetter">-Voraussicht-</a>
+</br>
+<a href="radarkarte.php" target="_parent" id="linkinstunde" style="position: absolute; color:rgb(101, 101, 101);margin-left:160px;margin-top:100px;">-Voraussicht-</a>
+
+
 </body>
 </html>
