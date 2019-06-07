@@ -129,7 +129,7 @@ b:
 ?>
 </a>
 </br>
-<a href="radarkarte.php" target="_parent" id="linkinstunde" style="position: absolute; color:rgb(101, 101, 101);margin-left:160px;margin-top:100px;">-Voraussicht-</a>
+<a href="vorraussicht.php" target="_parent" id="linkinstunde" style="position: absolute; color:rgb(101, 101, 101);margin-left:160px;margin-top:100px;">-Voraussicht-</a>
 
 
 </body>

@@ -26,7 +26,10 @@
 
 }
 
+#wetterimg2 {
+    margin-left: 500px;
 
+}
 
 #tag{
   border-radius: 5px;
@@ -63,6 +66,11 @@ background-color: #ceccca;
 
 }
 
+.back {
+
+    color:rgb(101, 101, 101);
+}
+
 a {
   text-align: center;
   font-size: 30px;
@@ -87,6 +95,9 @@ a {
 
 
 }
+
+
+
 
 #linkinheute {
   position: absolute;
